@@ -1,8 +1,8 @@
 #!/bin/bash
 #Desc: Fetch gmail tool 
 
-username='jahuay93'
-password='pfamnwqvlodjvakp'
+username=your-username
+password=your_password
 
 # Below is an input parameter. When executing it, you can select how many unread emails 
 # you want to see
