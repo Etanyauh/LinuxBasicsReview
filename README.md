@@ -16,8 +16,17 @@ system.
 - Understanding of sed command: SED command in UNIX stands for 'stream editor' and it can perform many functions on a file, such as, search, find, replace, insert, deletion. With SED you can edit files even without opening it. It also supports regular expressions, which allows for complex pattern matching. 
    SYNTAX: sed OPTIONS.... [SCRIPT][INPUTFILE...]
 
--Understanding of regular expressions (RegEx)
-  
+-Understanding of regular expressions (RegEx). A link to explain: https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285 
+ 
+
+### Como trabaja
+- tr -d '\n' removes the newline character, so that we can recreate each email entry with \n as the delimiter
+
+-sed 's:</entry>:\n:g' replaces every </entry> element with a newline, so that each e-mail entry is delimited by a new line, so emails can be parsed one-by-one. This can be seens through the source file of https://mail.google.com/mail/feed/atom. <entry> TAGS </entry> correspond to a single mail entry 
+
+- sed 's/.*<title>\(.*\)<\title.*<author><name>\([^<\*\)<\/........ This block matches the substring title by using <title>\(.*\)<\/title, the sender name by using <author><name>\[^<]*\/</name>, and the email bu using <email>\([^<]*\).
+
+- Author: \2 [\3] \nSUbject: \1\n : THis allows for an easy to read format, where \2 corresponds to the second substrin match. SHOW_COUNT variable is an input parameter which the user can add in order to selected how many unread email the user wants to be printed. 
 ## Author
   Joseph Huaynate
 
