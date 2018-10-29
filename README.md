@@ -2,7 +2,7 @@
 ##  By:Joseph Huaynate
 
 # Summary 
-	Gmail is what I use to check my email but sometimes there is too much clutter and I just wish to check who is sending me what and what exactly do they want. And thanks to RSS feeds, we can parse the RSS feed with the sender's name and the email's subject. Although this is just the intial step, I do want to be able to read the email and as well as respond to the sender. 
+###Gmail is what I use to check my email but sometimes there is too much clutter and I just wish to check who is sending me what and what exactly do they want. And thanks to RSS feeds, we can parse the RSS feed with the sender's name and the email's subject. Although this is just the intial step, I do want to be able to read the email and as well as respond to the sender. 
 
 ### Prerequisites
 - Have your username and password* for gmail at hand because you will need them.
